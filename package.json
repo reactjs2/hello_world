@@ -1,0 +1,31 @@
+{
+  "name": "mtpl",
+  "version": "0.1.0",
+  "homepage": "/mtpl-demo/server/app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "deploy": "next build && next export && node ./scripts/deploy.js",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.6.3",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "axios": "^1.5.0",
+    "formik": "^2.4.5",
+    "moment": "^2.29.4",
+    "next": "13.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-owl-carousel": "^2.3.3",
+    "typescript": "5.2.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react-lottie": "^1.2.6",
+    "webpack": "^5.88.2"
+  }
+}

@@ -1,0 +1,11 @@
+@media screen and (min-width: 1899px) {
+  .main_footer_div.footer_inner:after {
+    height: 1185px !important;
+  }
+}
+#button.show {
+  display: flex !important;
+}
+.main_footer_div.footer_inner:after {
+  height: 1100px !important;
+}

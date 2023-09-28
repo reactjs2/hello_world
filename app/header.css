@@ -1,0 +1,31 @@
+.websiteClass {
+  display: none;
+}
+.contact_sbmt {
+  margin-top: 0px;
+}
+.link-color {
+  color: black;
+}
+.full_address_div a {
+  margin-right: 10px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+.full_address_div span {
+  display: flex;
+}
+.row-custom {
+  display: flex;
+  flex-wrap: wrap;
+}
+p.multi-add-wrap.multi-add-wrap-white {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+@media (max-width: 991px) {
+  .contact_address_main .col-md-6.no_padding.mt-30 {
+    margin: 0;
+  }
+}
