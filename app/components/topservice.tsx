@@ -1,5 +1,6 @@
 import React from "react";
-import Clients from "./clients";
+import Image from "next/image";
+// import Clients from "./clients";
 
 const TopService = () => {
   return (
@@ -18,7 +19,7 @@ const TopService = () => {
                 data-wow-delay='0.2s'
               >
                 <div className='it_img_div'>
-                  <img
+                  <Image
                     className='lazy'
                     alt='solution1'
                     src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/solution1.jpg`}
@@ -119,7 +120,7 @@ const TopService = () => {
                 data-wow-delay='0.2s'
               >
                 <div className='it_img_div'>
-                  <img
+                  <Image
                     className='lazy'
                     alt='solution2'
                     src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/solution2.jpg`}
@@ -143,7 +144,7 @@ const TopService = () => {
                 data-wow-delay='0.2s'
               >
                 <div className='it_img_div'>
-                  <img
+                  <Image
                     className='lazy'
                     alt='solution3'
                     src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/solution3.jpg`}
@@ -244,7 +245,7 @@ const TopService = () => {
                 data-wow-delay='0.2s'
               >
                 <div className='it_img_div'>
-                  <img
+                  <Image
                     className='lazy'
                     alt='solution4'
                     src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/solution4.jpg`}
@@ -346,7 +347,7 @@ const TopService = () => {
           </div>
           <div className='trust_client_child'>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -356,7 +357,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -366,7 +367,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -376,7 +377,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -386,7 +387,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -396,7 +397,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -406,7 +407,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -416,7 +417,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -426,7 +427,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -436,7 +437,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -446,7 +447,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -456,7 +457,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -466,7 +467,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -476,7 +477,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -486,7 +487,7 @@ const TopService = () => {
               />
             </div>
             <div className='trust_logo wow fadeInDown' data-wow-delay='0.2s'>
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='white_cap'
@@ -507,7 +508,7 @@ const TopService = () => {
           </div>
           <div className='media_section_main'>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media1'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/pcmag_logo.svg`}
@@ -516,7 +517,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media2'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/newyorktimes.svg`}
@@ -525,7 +526,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media3'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/mashable_logo.svg`}
@@ -534,7 +535,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media4'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/microsoft_logo.svg`}
@@ -543,7 +544,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media5'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/techcrunch_logo.svg`}
@@ -552,7 +553,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media6'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/the_telegraph_logo.svg`}
@@ -561,7 +562,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media7'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/capterra.svg`}
@@ -570,7 +571,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media8'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/crowd.svg`}
@@ -579,7 +580,7 @@ const TopService = () => {
               />{" "}
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media9'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/better_business_bureau.svg`}
@@ -588,7 +589,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media10'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/clutch.svg`}
@@ -597,7 +598,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media11'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/cnet.svg`}
@@ -606,7 +607,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media12'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/entrepreneur.svg`}
@@ -615,7 +616,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media13'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/inc.svg`}
@@ -624,7 +625,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media14'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/forbes.svg`}
@@ -633,7 +634,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media15'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/wikipedia.svg`}
@@ -642,7 +643,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media16'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/yourstory.svg`}
@@ -651,7 +652,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media17'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/apple_store.svg`}
@@ -660,7 +661,7 @@ const TopService = () => {
               />
             </div>
             <div className='media_logo'>
-              <img
+              <Image
                 className='lazy'
                 alt='media18'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/google_pay.svg`}

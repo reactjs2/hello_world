@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import API from "../services/api";
+import API from "../../services/api";
 import moment from "moment";
+import Image from "next/image";
 const Blog = () => {
   const [blogsData, setblogsData] = useState([]);
 
@@ -26,7 +27,7 @@ const Blog = () => {
               <div className='blog_sub_details'>
                 <a href='/'>
                   <div className='blog_img'>
-                    <img
+                    <Image 
                       className='lazy'
                       src={item.featured_image_url}
                       id='blog_image'
@@ -36,7 +37,7 @@ const Blog = () => {
                     />
                     <div className='blog_arrow_new'>
                       <div className='blog_arrow'>
-                        <img
+                        <Image 
                           className='lazy'
                           loading='lazy'
                           alt='arrow'
@@ -53,7 +54,7 @@ const Blog = () => {
                         {moment(item.date).format("DD MMM YYYY")}
                       </span>
                       <span className='text_right' style={{ float: "right" }}>
-                        <img
+                        <Image 
                           data-src='https://cdn.moontechnolabs.com/live/blog/images/eye.png'
                           className='lazyloaded'
                           alt='eye'
@@ -92,11 +93,13 @@ const Blog = () => {
                         aria-expanded='true'
                         aria-controls='social_btn_display31'
                       >
-                        <img
+                        <Image 
                           data-src='https://cdn.moontechnolabs.com/live/blog/images/share.png'
                           className='lazy lazyloaded'
                           alt='share'
                           src='https://cdn.moontechnolabs.com/live/blog/images/share.png'
+                          width={20}
+                          height={20}
                         />
                       </button>
                     </span>
@@ -215,7 +218,7 @@ const Blog = () => {
             // onclick="button_event_tracking('Home', 'View More', 'Home-Blog-ViewMore');"
           >
             View More{" "}
-            <img
+            <Image 
               className='lazy'
               loading='lazy'
               alt='arrow'

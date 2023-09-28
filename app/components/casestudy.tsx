@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const CaseStudy = () => {
   const [tab, settab] = useState("all_filter");
@@ -78,7 +79,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/moon-invoice')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='moon_invoice'
@@ -119,7 +120,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/reliyo')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='reliyo'
@@ -158,7 +159,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/challengers2020')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='chanllangers'
@@ -198,7 +199,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/moon-dialer')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='moon_diler'
@@ -239,7 +240,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/zero-eyes')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='zero_eyes'
@@ -279,7 +280,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/prixpo')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     alt='prixpo'
                     // src="<?php echo config('constants.CDN_URL_IMAGES') . 'blank_image.svg';?>"
@@ -318,7 +319,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/ara')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='ara'
@@ -358,7 +359,7 @@ const CaseStudy = () => {
             >
               <a href="{{ secure_asset('/portfolio/indigo')}}">
                 <div className='img_hover_zoom'>
-                  <img
+                  <Image
                     className='lazy'
                     loading='lazy'
                     alt='indigo'
@@ -398,7 +399,7 @@ const CaseStudy = () => {
             className='theme_btn'
           >
             View More{" "}
-            <img
+            <Image
               className='lazy'
               loading='lazy'
               alt='arrow'

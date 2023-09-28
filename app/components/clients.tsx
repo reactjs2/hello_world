@@ -1,10 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
-import "./client.css";
+import "../../css/client.css";
 
 const Clients = () => {
-  const [temp, settemp] = useState(false);
   const [client, setclient] = useState<string[]>([]);
   const [youtubeUrl, setyoutubeUrl] = useState("");
   const [clientName, setclientName] = useState("");

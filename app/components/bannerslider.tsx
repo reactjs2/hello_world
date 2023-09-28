@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const BannerSlider = () => {
   return (
@@ -19,14 +20,12 @@ const BannerSlider = () => {
               <a href="{{ secure_asset('/services/mobile-app-development')}}">
                 <span className='box_wrap wow fadeInDown' data-wow-delay='0.2s'>
                   <span className='icon color_bg_blue'>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className='lazy'
                       alt='white_cap'
-                      // src="<?php echo config('constants.CDN_URL_IMAGES') . 'blank_image.svg';?>"
-                      // data-src="<?php echo config('constants.CDN_URL_IMAGES') . 'images_svg/hom_mobile_app.svg'; ?>"
-                      width='40'
                       src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/hom_mobile_app.svg`}
-                      height='40'
                     />
                   </span>
                   <span className='text'>
@@ -43,13 +42,13 @@ const BannerSlider = () => {
               <a href="{{ secure_asset('/services/custom-software-development-company')}}">
                 <span className='box_wrap wow fadeInDown' data-wow-delay='0.2s'>
                   <span className='icon color_bg_green'>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className='lazy'
                       loading='lazy'
                       alt='white_cap'
                       src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/hom_custom_software.svg`}
-                      width='40'
-                      height='40'
                     />
                   </span>
                   <span className='text'>
@@ -70,15 +69,13 @@ const BannerSlider = () => {
               >
                 <span className='box_wrap wow fadeInDown' data-wow-delay='0.2s'>
                   <span className='icon color_yellow_blue'>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className='lazy'
                       loading='lazy'
                       alt='white_cap'
-                      // src="<?php echo config('constants.CDN_URL_IMAGES') . 'blank_image.svg';?>"
-                      // data-src="<?php echo config('constants.CDN_URL_IMAGES') . 'images_svg/hom_web_app.svg'; ?>"
                       src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/hom_web_app.svg`}
-                      width='40'
-                      height='40'
                     />
                   </span>
                   <span className='text'>
@@ -99,15 +96,13 @@ const BannerSlider = () => {
               >
                 <span className='box_wrap wow fadeInUp' data-wow-delay='0.2s'>
                   <span className='icon color_bg_red'>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className='lazy'
                       loading='lazy'
                       alt='white_cap'
-                      // src="<?php echo config('constants.CDN_URL_IMAGES') . 'blank_image.svg';?>"
-                      // data-src="<?php echo config('constants.CDN_URL_IMAGES') . 'images_svg/hom_void_dev.svg'; ?>"
                       src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/hom_void_dev.svg`}
-                      width='40'
-                      height='40'
                     />
                   </span>
                   <span className='text'>
@@ -128,15 +123,13 @@ const BannerSlider = () => {
               >
                 <span className='box_wrap wow fadeInUp' data-wow-delay='0.2s'>
                   <span className='icon color_bg_pruple'>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className='lazy'
                       loading='lazy'
                       alt='white_cap'
-                      // src="<?php echo config('constants.CDN_URL_IMAGES') . 'blank_image.svg';?>"
-                      // data-src="<?php echo config('constants.CDN_URL_IMAGES') . 'images_svg/hom_hire_developer.svg'; ?>"
                       src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/hom_hire_developer.svg`}
-                      width='40'
-                      height='40'
                     />
                   </span>
                   <span className='text'>
@@ -157,15 +150,13 @@ const BannerSlider = () => {
               >
                 <span className='box_wrap wow fadeInUp' data-wow-delay='0.2s'>
                   <span className='icon color_yellow_orange'>
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
                       className='lazy'
                       loading='lazy'
                       alt='white_cap'
-                      // src="<?php echo config('constants.CDN_URL_IMAGES') . 'blank_image.svg';?>"
-                      // data-src="<?php echo config('constants.CDN_URL_IMAGES') . 'images_svg/hom_iot_dev.svg'; ?>"
                       src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/hom_iot_dev.svg`}
-                      width='40'
-                      height='40'
                     />
                   </span>
                   <span className='text'>

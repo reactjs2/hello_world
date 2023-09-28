@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Industries = () => {
@@ -18,7 +19,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='health'
@@ -30,7 +31,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='edu_icon'
@@ -50,7 +51,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='education'
@@ -62,7 +63,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='edu_icon'
@@ -82,7 +83,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='e-commerce'
@@ -94,7 +95,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='bag_icon'
@@ -114,7 +115,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='hotel_industries'
@@ -126,7 +127,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='hotel_icon'
@@ -148,7 +149,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='travel'
@@ -160,7 +161,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='travel_icon'
@@ -180,7 +181,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='banking'
@@ -192,7 +193,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='bank_icon'
@@ -212,7 +213,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='logistic'
@@ -224,7 +225,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='shipping_icon'
@@ -244,7 +245,7 @@ const Industries = () => {
               data-wow-delay='0.2s'
             >
               <div className='shape_img'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='social_network'
@@ -256,7 +257,7 @@ const Industries = () => {
                 />
               </div>
               <div className='shape_icon'>
-                <img
+                <Image 
                   className='lazy'
                   loading='lazy'
                   alt='network_icon'

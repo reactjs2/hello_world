@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Technologies = () => {
@@ -26,7 +27,7 @@ const Technologies = () => {
           <div className='tab-content'>
             <div id='language' className='tab-pane fade'>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program1'
@@ -36,7 +37,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program2'
@@ -46,7 +47,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program3'
@@ -56,7 +57,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program4'
@@ -66,7 +67,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program5'
@@ -76,7 +77,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program6'
@@ -86,7 +87,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program7'
@@ -96,7 +97,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program8'
@@ -106,7 +107,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program9'
@@ -116,7 +117,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program10'
@@ -126,7 +127,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program11'
@@ -136,7 +137,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program12'
@@ -146,7 +147,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program13'
@@ -156,7 +157,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program14'
@@ -166,7 +167,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program15'
@@ -176,7 +177,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program16'
@@ -186,7 +187,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program17'
@@ -196,7 +197,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='program18'
@@ -208,7 +209,7 @@ const Technologies = () => {
             </div>
             <div id='platform' className='tab-pane fade in active'>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame1'
@@ -218,7 +219,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame2'
@@ -228,7 +229,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame3'
@@ -238,7 +239,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame4'
@@ -248,7 +249,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame5'
@@ -258,7 +259,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame6'
@@ -268,7 +269,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame7'
@@ -278,7 +279,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame8'
@@ -288,7 +289,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame9'
@@ -298,7 +299,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame10'
@@ -308,7 +309,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame11'
@@ -318,7 +319,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame12'
@@ -328,7 +329,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame14'
@@ -338,7 +339,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame15'
@@ -350,7 +351,7 @@ const Technologies = () => {
             </div>
             <div id='database' className='tab-pane fade'>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data1'
@@ -360,7 +361,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data2'
@@ -370,7 +371,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data3'
@@ -380,7 +381,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data4'
@@ -390,7 +391,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data5'
@@ -400,7 +401,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data6'
@@ -410,7 +411,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data7'
@@ -420,7 +421,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data8'
@@ -430,7 +431,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data9'
@@ -440,7 +441,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data10'
@@ -450,7 +451,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data11'
@@ -460,7 +461,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data12'
@@ -470,7 +471,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='data13'
@@ -480,7 +481,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame13'
@@ -490,7 +491,7 @@ const Technologies = () => {
                 />
               </div>
               <div className='technology_img'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='frame12'

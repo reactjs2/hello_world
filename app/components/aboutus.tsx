@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -31,7 +32,7 @@ const AboutUs = () => {
               data-toggle='modal'
             >
               Talk to our expert
-              <img
+              <Image
                 className='lazy'
                 loading='lazy'
                 alt='arrow'
@@ -50,7 +51,7 @@ const AboutUs = () => {
               style={{ visibility: "visible", animationDelay: "0.2s" }}
             >
               <span className='info_block complete_pro'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='complete_project'
@@ -61,7 +62,7 @@ const AboutUs = () => {
                 <h3>1550+</h3> <p>Projects Completed</p>
               </span>
               <span className='info_block dev_staff'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='staff'
@@ -78,7 +79,7 @@ const AboutUs = () => {
               style={{ visibility: "visible", animationDelay: "0.2s" }}
             >
               <span className='info_block experience'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='experience'
@@ -89,7 +90,7 @@ const AboutUs = () => {
                 <h3>14+</h3> <p>Years of Experience</p>
               </span>
               <span className='info_block location'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='location'
@@ -106,7 +107,7 @@ const AboutUs = () => {
               style={{ visibility: "visible", animationDelay: "0.2s" }}
             >
               <span className='info_block customers'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='trophy'
@@ -117,7 +118,7 @@ const AboutUs = () => {
                 <h3>830+</h3> <p>Global Customers</p>
               </span>
               <span className='info_block industry'>
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='industry'

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Service = () => {
@@ -29,7 +30,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='web_dev'
@@ -39,7 +40,7 @@ const Service = () => {
                 />
               </div>
               <span>Web Development</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 width='18'
                 height='12'
@@ -57,17 +58,17 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='mobile_app'
                   src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/mobile_app.svg`}
-                  width='auto'
+                  width='51'
                   height='51'
                 />
               </div>
               <span>Mobile App</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 width='18'
                 height='12'
@@ -85,7 +86,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/wearable_app.svg`}
                   className='lazy'
                   loading='lazy'
@@ -95,7 +96,7 @@ const Service = () => {
                 />
               </div>
               <span>Wearable App</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 width='18'
                 height='12'
@@ -113,7 +114,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='hybrid_app'
@@ -123,7 +124,7 @@ const Service = () => {
                 />
               </div>
               <span>Hybrid App</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 alt='arrow'
                 width='18'
@@ -143,7 +144,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='design'
@@ -153,7 +154,7 @@ const Service = () => {
                 />
               </div>
               <span>Design</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 alt='arrow'
                 className='service_arrow lazy'
@@ -171,7 +172,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='block_chain'
@@ -181,7 +182,7 @@ const Service = () => {
                 />
               </div>
               <span>Blockchain Development</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 alt='arrow'
                 className='service_arrow lazy'
@@ -199,7 +200,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='voip_dev'
@@ -209,7 +210,7 @@ const Service = () => {
                 />
               </div>
               <span>VOIP Development</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 width='18'
                 height='12'
@@ -227,7 +228,7 @@ const Service = () => {
                 className='service_iaon wow fadeInDown'
                 data-wow-delay='0.2s'
               >
-                <img
+                <Image
                   className='lazy'
                   loading='lazy'
                   alt='digital_market'
@@ -237,7 +238,7 @@ const Service = () => {
                 />
               </div>
               <span>Digital Marketing</span>
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/arrow.svg`}
                 alt='arrow'
                 width='18'
@@ -257,7 +258,7 @@ const Service = () => {
           >
             {" "}
             Let's Connect
-            <img
+            <Image
               className='lazy'
               loading='lazy'
               alt='arrow'

@@ -3,39 +3,6 @@ import React from "react";
 const Infrastructur = () => {
   return (
     <section className='infrastructur_pt-50'>
-      {/* <div
-        className='modal fade'
-        id='exampleModal'
-        role='dialog'
-        aria-labelledby='exampleModalLabel'
-        aria-hidden='true'
-      >
-        <div className='modal-dialog' role='document'>
-          <div className='modal-content'>
-            <div className='modal-header'>
-              <button
-                type='button'
-                className='close'
-                data-dismiss='modal'
-                aria-label='Close'
-              >
-                <span aria-hidden='true'>&times;</span>
-              </button>
-            </div>
-            <div className='modal-body'>
-              <iframe
-                id='youtubeEmbed'
-                width='560'
-                height='315'
-                src='https://www.youtube.com/embed/Etrn68T-M0k?autoplay=1'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-                title='Embedded youtube'
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div
         className='custom_modal structure_modal in'
         id='infrastructure'
