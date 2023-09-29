@@ -55,10 +55,6 @@ export default function RootLayout({
         />
         <link
           rel='stylesheet'
-          href='https://cdn.moontechnolabs.com/live/css/home.css?v=1.13'
-        />
-        <link
-          rel='stylesheet'
           href='https://cdn.moontechnolabs.com/live/css/owl.carousel.min.css?v=1.3'
         />
       </head>

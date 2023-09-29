@@ -1,18 +1,10 @@
 import ContactForm from "../clientform/contactform";
-// import Clients from "../components/clients";
+import Clients from "../components/clients";
 import "../../css/footer.css";
 
 const Contactus = () => {
   return (
     <>
-      {/* <Head>
-      <link
-          rel='preload stylesheet'
-          as='style'
-          type='text/css'
-          href='https://cdn.moontechnolabs.com/live/css/combine_all.css?v=2.22'
-        />
-      </Head> */}
       <div className='banner_slider_div banner_margin_zero'>
         <div
           className='contact_banner_div wow fadeInDown business_banner_div animated'
@@ -153,7 +145,9 @@ const Contactus = () => {
         </div>
       </div>
       <div className='new_curve_service_bg portfolio_service_bg no_bg'>
-        <div className='container'>{/* <Clients /> */}</div>
+        <div className='container'>
+          <Clients />
+        </div>
       </div>
       <footer className='main_footer_div footer_inner'>
         <div className='container'>

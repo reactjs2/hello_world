@@ -16,12 +16,10 @@ import "../css/footer.css";
 export default function Home() {
   return (
     <div>
-      {/* <head>
-        <link
-          rel='stylesheet'
-          href='https://cdn.moontechnolabs.com/live/css/home.css?v=1.13'
-        />
-      </head> */}
+      <link
+        rel='stylesheet'
+        href='https://cdn.moontechnolabs.com/live/css/home.css?v=1.13'
+      />
       <BannerSlider />
       <AboutUs />
       <Service />
