@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const Infrastructur = () => {
+  const [open, setopen] = useState(0);
   return (
     <section className='infrastructur_pt-50'>
       <div
@@ -18,14 +20,17 @@ const Infrastructur = () => {
               width='700'
               id='infrastructure_video'
               height='394'
-              src='https://www.youtube.com/embed/Etrn68T-M0k?si=6q5XdaLQM4GRU4Dq&amp;autoplay=1&amp;showinfo=0&amp;modestbranding=1&amp;rel=0'
+              src={`https://www.youtube.com/embed/Etrn68T-M0k?showinfo=0&modestbranding=1&rel=0&mute=0&autoplay=${open}`}
               title='YouTube video player'
-              frameBorder={0}
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;mute'
               allowFullScreen
             ></iframe>
             {/* Close button to dismiss the modal */}
-            <button type='button' className='close close_modal'>
+            <button
+              type='button'
+              className='close close_modal'
+              onClick={() => setopen(0)}
+            >
               ×
             </button>
           </div>
@@ -40,7 +45,11 @@ const Infrastructur = () => {
                 Innovative Workspace of Moon Technolabs
               </h2>
             </div>
-            <a href='javascript:void(0)' className='play_button_mtpl'>
+            <a
+              href='javascript:void(0)'
+              className='play_button_mtpl'
+              onClick={() => setopen(1)}
+            >
               <img
                 className='lazy'
                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/${process.env.NEXT_PUBLIC_IMAGE_SVG}/company_img.jpg`}

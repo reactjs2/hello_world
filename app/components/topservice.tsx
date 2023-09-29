@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-// import Clients from "./clients";
+import Clients from "./clients";
 
 const TopService = () => {
   return (
@@ -499,7 +499,7 @@ const TopService = () => {
           </div>
         </div>
 
-        {/* <Clients /> */}
+        <Clients />
         <div className='media_partner_div'>
           <div className='services_child'>
             <h2 className='center_under_line'>

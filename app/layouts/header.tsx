@@ -1,9 +1,11 @@
 import React from "react";
+import getConfig from "next/config";
 import Link from "next/link";
 import Image from "next/image";
 import HeaderForm from "../clientform/headerform";
 import "../../css/header.css";
 const Header = ({ children }: any) => {
+  const { publicRuntimeConfig } = getConfig();
   return (
     <>
       <HeaderForm />
@@ -47,7 +49,7 @@ const Header = ({ children }: any) => {
                     width={18}
                     height={12}
                     className='lazy mobile_hide_banner us_show_banner'
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/usa-flag.svg`}
+                    src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MAIN}/usa-flag.svg`}
                     alt='usa_flag'
                   />
                   <span className='mobile_hide'>+1 (620) 330-9814</span>
@@ -77,7 +79,7 @@ const Header = ({ children }: any) => {
                     width={18}
                     height={12}
                     className='lazy mobile_hide_banner'
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/ind_flag.svg`}
+                    src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MAIN}/ind_flag.svg`}
                     alt='india_flag'
                   />
                   <span className='mobile_hide'>+91-79-40055109</span>
@@ -175,7 +177,7 @@ const Header = ({ children }: any) => {
                     width={100}
                     height={100}
                     className='showindia lazy'
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MAIN}/moon_new_logo.svg`}
+                    src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MAIN}/moon_new_logo.svg`}
                     alt='main_logo'
                   />
                   <p className='sticky'></p>
@@ -360,14 +362,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ios_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ios_app.svg`}
                                       alt='ios_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ios_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ios_app_hover.svg`}
                                       alt='ios_app'
                                     />
                                   </div>
@@ -388,14 +390,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/and_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/and_app.svg`}
                                       alt='and_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/and_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/and_app_hover.svg`}
                                       alt='and_app'
                                     />
                                   </div>
@@ -416,14 +418,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/react_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/react_app.svg`}
                                       alt='react_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/react_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/react_app_hover.svg`}
                                       alt='react_app'
                                     />
                                   </div>
@@ -444,14 +446,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/flu_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/flu_app.svg`}
                                       alt='flu_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/flu_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/flu_app_hover.svg`}
                                       alt='flu_app'
                                     />
                                   </div>
@@ -472,14 +474,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/win_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/win_app.svg`}
                                       alt='win_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/win_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/win_app_hover.svg`}
                                       alt='win_app'
                                     />
                                   </div>
@@ -500,14 +502,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wea_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wea_app.svg`}
                                       alt='wea_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wea_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wea_app_hover.svg`}
                                       alt='wea_app'
                                     />
                                   </div>
@@ -528,14 +530,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/saas_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/saas_app.svg`}
                                       alt='saas_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/saas_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/saas_app_hover.svg`}
                                       alt='saas_app'
                                     />
                                   </div>
@@ -556,14 +558,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/cus_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/cus_app.svg`}
                                       alt='cus_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/cus_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/cus_app_hover.svg`}
                                       alt='cus_app'
                                     />
                                   </div>
@@ -610,14 +612,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app.svg`}
                                       alt='nodejs_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app_hover.svg`}
                                       alt='nodejs_app'
                                     />
                                   </div>
@@ -638,14 +640,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/angular_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/angular_app.svg`}
                                       alt='angular_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/angular_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/angular_app_hover.svg`}
                                       alt='angular_app'
                                     />
                                   </div>
@@ -666,14 +668,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/rt_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/rt_app.svg`}
                                       alt='rt_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/rt_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/rt_app_hover.svg`}
                                       alt='rt_app'
                                     />
                                   </div>
@@ -694,14 +696,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/php_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/php_app.svg`}
                                       alt='php_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/php_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/php_app_hover.svg`}
                                       alt='php_app'
                                     />
                                   </div>
@@ -722,14 +724,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app.svg`}
                                       alt='laravel_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app_hover.svg`}
                                       alt='laravel_app'
                                     />
                                   </div>
@@ -750,14 +752,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/py_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/py_app.svg`}
                                       alt='py_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/py_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/py_app_hover.svg`}
                                       alt='py_app'
                                     />
                                   </div>
@@ -778,14 +780,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ci_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ci_app.svg`}
                                       alt='ci_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ci_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ci_app_hover.svg`}
                                       alt='ci_app'
                                     />
                                   </div>
@@ -806,14 +808,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app.svg`}
                                       alt='ecom_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app_hover.svg`}
                                       alt='ecom_app'
                                     />
                                   </div>
@@ -834,14 +836,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wp_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wp_app.svg`}
                                       alt='wp_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wp_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wp_app_hover.svg`}
                                       alt='wp_app'
                                     />
                                   </div>
@@ -862,14 +864,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app.svg`}
                                       alt='pwa_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app_hover.svg`}
                                       alt='pwa_app'
                                     />
                                   </div>
@@ -890,14 +892,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/asp.net_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/asp.net_app.svg`}
                                       alt='ecom_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/aspnet_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/aspnet_hover.svg`}
                                       alt='ecom_app'
                                     />
                                   </div>
@@ -945,14 +947,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -974,14 +976,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1003,14 +1005,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_webrtc.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_webrtc.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_webrtc_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_webrtc_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1032,14 +1034,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1061,14 +1063,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1090,14 +1092,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1119,14 +1121,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1148,14 +1150,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1203,14 +1205,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1230,14 +1232,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1259,14 +1261,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1288,14 +1290,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1317,14 +1319,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -1389,14 +1391,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ios_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ios_app.svg`}
                                           alt='ios_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ios_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ios_app_hover.svg`}
                                           alt='ios_app'
                                         />
                                       </div>
@@ -1418,14 +1420,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/and_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/and_app.svg`}
                                           alt='and_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/and_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/and_app_hover.svg`}
                                           alt='and_app'
                                         />
                                       </div>
@@ -1447,14 +1449,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/react_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/react_app.svg`}
                                           alt='react_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/react_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/react_app_hover.svg`}
                                           alt='react_app'
                                         />
                                       </div>
@@ -1476,14 +1478,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/flu_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/flu_app.svg`}
                                           alt='flu_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/flu_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/flu_app_hover.svg`}
                                           alt='flu_app'
                                         />
                                       </div>
@@ -1505,14 +1507,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/win_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/win_app.svg`}
                                           alt='win_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/win_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/win_app_hover.svg`}
                                           alt='win_app'
                                         />
                                       </div>
@@ -1534,14 +1536,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wea_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wea_app.svg`}
                                           alt='wea_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wea_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wea_app_hover.svg`}
                                           alt='wea_app'
                                         />
                                       </div>
@@ -1563,14 +1565,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/saas_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/saas_app.svg`}
                                           alt='saas_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/saas_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/saas_app_hover.svg`}
                                           alt='saas_app'
                                         />
                                       </div>
@@ -1592,14 +1594,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/cus_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/cus_app.svg`}
                                           alt='cus_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/cus_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/cus_app_hover.svg`}
                                           alt='cus_app'
                                         />
                                       </div>
@@ -1629,14 +1631,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app.svg`}
                                           alt='nodejs_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app_hover.svg`}
                                           alt='nodejs_app'
                                         />
                                       </div>
@@ -1658,14 +1660,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/angular_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/angular_app.svg`}
                                           alt='angular_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/angular_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/angular_app_hover.svg`}
                                           alt='angular_app'
                                         />
                                       </div>
@@ -1687,14 +1689,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/rt_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/rt_app.svg`}
                                           alt='rt_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/rt_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/rt_app_hover.svg`}
                                           alt='rt_app'
                                         />
                                       </div>
@@ -1716,14 +1718,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/php_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/php_app.svg`}
                                           alt='php_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/php_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/php_app_hover.svg`}
                                           alt='php_app'
                                         />
                                       </div>
@@ -1745,14 +1747,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app.svg`}
                                           alt='laravel_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/laravel_app_hover.svg`}
                                           alt='laravel_app'
                                         />
                                       </div>
@@ -1774,14 +1776,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/py_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/py_app.svg`}
                                           alt='py_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/py_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/py_app_hover.svg`}
                                           alt='py_app'
                                         />
                                       </div>
@@ -1803,14 +1805,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ci_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ci_app.svg`}
                                           alt='ci_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ci_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ci_app_hover.svg`}
                                           alt='ci_app'
                                         />
                                       </div>
@@ -1832,14 +1834,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app.svg`}
                                           alt='ecom_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ecom_app_hover.svg`}
                                           alt='ecom_app'
                                         />
                                       </div>
@@ -1861,14 +1863,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wp_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wp_app.svg`}
                                           alt='wp_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/wp_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/wp_app_hover.svg`}
                                           alt='wp_app'
                                         />
                                       </div>
@@ -1890,14 +1892,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app.svg`}
                                           alt='pwa_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/pwa_app_hover.svg`}
                                           alt='pwa_app'
                                         />
                                       </div>
@@ -1919,14 +1921,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/asp.net_app.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/asp.net_app.svg`}
                                           alt='ecom_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/aspnet_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/aspnet_hover.svg`}
                                           alt='ecom_app'
                                         />
                                       </div>
@@ -1956,14 +1958,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_uiux_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -1985,14 +1987,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_seo_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2014,14 +2016,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_smo_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2043,14 +2045,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ppc_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2072,14 +2074,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_apo_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2109,14 +2111,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_iot_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2138,14 +2140,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2167,14 +2169,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_blockchain.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_webrtc_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_webrtc_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2196,14 +2198,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_asterisk_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2225,14 +2227,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_cloud_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2254,14 +2256,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_meta_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2283,14 +2285,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_arvr_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2312,14 +2314,14 @@ const Header = ({ children }: any) => {
                                           width={100}
                                           height={100}
                                           className='normal lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml.svg`}
                                           alt='web_app'
                                         />
                                         <Image
                                           width={100}
                                           height={100}
                                           className='hover lazy'
-                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml_hover.svg`}
+                                          src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ai-ml_hover.svg`}
                                           alt='web_app'
                                         />
                                       </div>
@@ -2372,14 +2374,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_healthcare.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_healthcare.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_healthcare_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_healthcare_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2400,14 +2402,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_grocery.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_grocery.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_grocery_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_grocery_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2426,14 +2428,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_food.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_food.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_food_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_food_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2454,14 +2456,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ecommerce.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ecommerce.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_ecommerce_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_ecommerce_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2482,14 +2484,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_hotal.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_hotal.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_hotal_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_hotal_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2510,14 +2512,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_elearn.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_elearn.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_elearn_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_elearn_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2538,14 +2540,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_beauty.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_beauty.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_beauty_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_beauty_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2566,14 +2568,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_taxi.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_taxi.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_taxi_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_taxi_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2594,14 +2596,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_fitness.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_fitness.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_fitness_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_fitness_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2622,14 +2624,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_sports.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_sports.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_sports_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_sports_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2650,14 +2652,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_travel.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_travel.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_travel_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_travel_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2678,14 +2680,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_dating.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_dating.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_dating_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_dating_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2704,14 +2706,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_crypto.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_crypto.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_crypto_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_crypto_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2732,14 +2734,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_celebrity.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_celebrity.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_celebrity_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_celebrity_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2760,14 +2762,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_flower.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_flower.svg`}
                                       alt='web_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy/'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/menu_flower_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/menu_flower_hover.svg`}
                                       alt='web_app'
                                     />
                                   </div>
@@ -2818,14 +2820,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ios_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ios_app.svg`}
                                       alt='ios_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/ios_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/ios_app_hover.svg`}
                                       alt='ios_app'
                                     />
                                   </div>
@@ -2846,14 +2848,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/and_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/and_app.svg`}
                                       alt='and_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/and_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/and_app_hover.svg`}
                                       alt='and_app'
                                     />
                                   </div>
@@ -2874,14 +2876,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/flu_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/flu_app.svg`}
                                       alt='flu_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/flu_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/flu_app_hover.svg`}
                                       alt='flu_app'
                                     />
                                   </div>
@@ -2902,14 +2904,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/fs_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/fs_app.svg`}
                                       alt='fs_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/fs_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/fs_app_hover.svg`}
                                       alt='fs_app'
                                     />
                                   </div>
@@ -2930,14 +2932,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/angular_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/angular_app.svg`}
                                       alt='angular_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/angular_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/angular_app_hover.svg`}
                                       alt='angular_app'
                                     />
                                   </div>
@@ -2958,14 +2960,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/rt_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/rt_app.svg`}
                                       alt='rt_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/rt_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/rt_app_hover.svg`}
                                       alt='rt_app'
                                     />
                                   </div>
@@ -2986,14 +2988,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app.svg`}
                                       alt='nodejs_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/nodejs_app_hover.svg`}
                                       alt='nodejs_app'
                                     />
                                   </div>
@@ -3014,14 +3016,14 @@ const Header = ({ children }: any) => {
                                       width={100}
                                       height={100}
                                       className='normal lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/py_app.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/py_app.svg`}
                                       alt='py_app'
                                     />
                                     <Image
                                       width={100}
                                       height={100}
                                       className='hover lazy'
-                                      src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${process.env.NEXT_PUBLIC_IMAGE_MEGA}/py_app_hover.svg`}
+                                      src={`${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_URL}/${publicRuntimeConfig.NEXT_PUBLIC_IMAGE_MEGA}/py_app_hover.svg`}
                                       alt='py_app'
                                     />
                                   </div>

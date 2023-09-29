@@ -5,7 +5,7 @@ const AboutUs = dynamic(() => import("./components/aboutus"));
 const Service = dynamic(() => import("./components/service"));
 const Industries = dynamic(() => import("./components/industries"));
 const CaseStudy = dynamic(() => import("./components/casestudy"));
-// const Process = dynamic(() => import("./components/process"));
+const Process = dynamic(() => import("./components/process"));
 const Technologies = dynamic(() => import("./components/technologies"));
 const Infrastructur = dynamic(() => import("./components/infrastructur"));
 const TopService = dynamic(() => import("./components/topservice"));
@@ -27,7 +27,7 @@ export default function Home() {
       <Service />
       <Industries />
       <CaseStudy />
-      {/* <Process /> */}
+      <Process />
       <Technologies />
       <Infrastructur />
       <TopService />

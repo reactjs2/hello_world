@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
-    "deploy": "next build && next export && node ./scripts/deploy.js",
-    "start": "next start",
+    "start": "next start -p 8000",
     "lint": "next lint"
   },
   "dependencies": {
@@ -20,11 +19,13 @@
     "next": "13.5.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-lottie": "^1.2.3",
     "react-owl-carousel": "^2.3.3",
     "typescript": "5.2.2",
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.20",
     "@types/react-lottie": "^1.2.6",
     "webpack": "^5.88.2"
   }

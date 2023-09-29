@@ -36,6 +36,7 @@
     "build/types/**/*.ts",
     "build/types/**/*.ts",
     "build/types/**/*.ts",
+    "build/types/**/*.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [

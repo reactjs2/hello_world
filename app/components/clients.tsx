@@ -1,6 +1,10 @@
 "use client";
+import $ from "jquery";
 import React, { useRef, useState } from "react";
-import OwlCarousel from "react-owl-carousel";
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
 import "../../css/client.css";
 
 const Clients = () => {
