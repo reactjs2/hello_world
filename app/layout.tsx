@@ -6,9 +6,8 @@ import Index from ".";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Top Mobile App Development Company in USA - Moon Technolabs",
-  description:
-    "Convert your Idea into an app with Moon Technolabs - Top mobile app and software development company in the USA and across the globe. Get your FREE Quote Now.",
+  title: "",
+  description: "",
 };
 
 export default function RootLayout({
